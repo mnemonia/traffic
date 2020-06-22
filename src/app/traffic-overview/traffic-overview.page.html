@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Übersicht</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="legend-item"><ion-icon name="square" style="color: #078B8D"></ion-icon>&nbsp;LoRaWAN</ion-col>
+      <ion-col class="legend-item"><ion-icon name="square" style="color: #A4D7B4"></ion-icon>&nbsp;Swisscom 5G</ion-col>
+      <ion-col class="legend-item"><ion-icon name="square" style="color: #FF0000"></ion-icon>&nbsp;Verkehrszähler</ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="map-wrapper" style="height: 100%;">
+    <div #map id="map"  style="height: 100%;"></div>
+  </div>
+</ion-content>
